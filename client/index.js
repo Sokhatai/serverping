@@ -6,7 +6,7 @@ const prompt = require('prompt-sync')();
 let username = prompt('Login ? ');
 let password = prompt('Mot de passe ? ');
 console.log(login + mdp);
-fetch("http://localhost:3001/", {
+fetch("http://localhost:3001/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
